@@ -8,20 +8,6 @@ import Sidebar from '../../components/Sidebar';
 import { useAuth } from '../../hooks/auth';
 import Button from '../../components/Button';
 
-interface MonthAvailabilityItem {
-  day: number;
-  available: boolean;
-}
-
-interface Appointment {
-  id: string;
-  date: string;
-  hourFormatted: string;
-  user: {
-    name: string;
-  };
-}
-
 const Dashboard: React.FC = () => {
   const { signOut, user } = useAuth();
 

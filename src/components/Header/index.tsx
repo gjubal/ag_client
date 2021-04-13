@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
@@ -61,7 +61,7 @@ const Header: React.FC<HeaderProps> = ({
             <h1>{title}</h1>
 
             {onButtonClick && (
-              <Button onClick={() => onButtonClick()}>{buttonText}</Button>
+              <Button onClick={onButtonClick}>{buttonText}</Button>
             )}
           </NavContent>
         </Nav>

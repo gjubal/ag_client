@@ -20,14 +20,26 @@ const Routes: React.FC = () => {
       <Route path="/" exact component={SignIn} />
       <Route path="/signup" component={SignUp} />
 
-      {/* include isPrivate tag in the following components once auth is done */}
-      <Route path="/profile" component={Profile} />
-      <Route path="/dashboard" exact component={Dashboard} />
-      <Route path="/dashboard/business" exact component={Business} />
-      <Route path="/dashboard/business/add" component={BusinessForm} />
-      <Route path="/dashboard/workforce" exact component={Workforce} />
-      <Route path="/dashboard/workforce/add" component={WorkforceForm} />
-      <Route path="/dashboard/schedule" exact component={Schedule} />
+      <Route path="/profile" isPrivate component={Profile} />
+      <Route path="/dashboard" isPrivate exact component={Dashboard} />
+      <Route path="/dashboard/business" isPrivate exact component={Business} />
+      <Route
+        path="/dashboard/business/add"
+        isPrivate
+        component={BusinessForm}
+      />
+      <Route
+        path="/dashboard/workforce"
+        isPrivate
+        exact
+        component={Workforce}
+      />
+      <Route
+        path="/dashboard/workforce/add"
+        isPrivate
+        component={WorkforceForm}
+      />
+      <Route path="/dashboard/schedule" isPrivate exact component={Schedule} />
     </Switch>
   );
 };

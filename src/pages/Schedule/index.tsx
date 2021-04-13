@@ -10,7 +10,7 @@ import Button from '../../components/Button';
 import Calendar from '../../components/Calendar';
 
 const Schedule: React.FC = () => {
-  const { signOut, user } = useAuth();
+  const { signOut } = useAuth();
 
   const [seen, setSeen] = useState(false);
 

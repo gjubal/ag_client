@@ -14,7 +14,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { Container, Content, AvatarInput } from './styles';
+import { Container, Content } from './styles';
 import { useAuth } from '../../hooks/auth';
 
 interface ProfileFormData {

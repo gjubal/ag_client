@@ -60,9 +60,8 @@ const WorkforceForm: React.FC = () => {
 
   const updateDayAvailability = useCallback(
     (field: string, input: string) => {
-      const updatedEmployee = workforce.map((employee, idx) => {
+      const updatedEmployee = workforce.map(employee => {
         if (employee.daysAvailable.includes(input)) {
-          // FIXME
           const newArray = employee.daysAvailable.filter(d => d !== input);
           return { ...employee, [field]: newArray };
         }

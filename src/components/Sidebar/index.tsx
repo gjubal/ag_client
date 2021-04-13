@@ -19,30 +19,15 @@ const Sidebar: React.FC<AuthProps> = ({ signOut }) => {
         </Link>
 
         <div>
-          <Link
-            to="/dashboard/business"
-            onClick={() => {
-              console.log('clicked on location');
-            }}
-          >
+          <Link to="/dashboard/business">
             <FiHome />
           </Link>
 
-          <Link
-            to="/dashboard/workforce"
-            onClick={() => {
-              console.log('clicked on workforce');
-            }}
-          >
+          <Link to="/dashboard/workforce">
             <FiBriefcase />
           </Link>
 
-          <Link
-            to="/dashboard/schedule"
-            onClick={() => {
-              console.log('clicked on schedule');
-            }}
-          >
+          <Link to="/dashboard/schedule">
             <FiClipboard />
           </Link>
         </div>
