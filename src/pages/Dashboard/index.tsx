@@ -18,7 +18,7 @@ const Dashboard: React.FC = () => {
       <Nav>
         <NavContent>
           <h1>
-            Welcome, <Link to="/profile">user.</Link>
+            Welcome, <Link to="/profile">{user.name}</Link>
           </h1>
         </NavContent>
       </Nav>
@@ -27,15 +27,15 @@ const Dashboard: React.FC = () => {
         <Section>
           <strong>What`s next?</strong>
 
-          <Link to="/dashboard/business">
+          <Link to="/dashboard/businesses">
             <Button>Add a business</Button>
           </Link>
 
-          <Link to="/dashboard/workforce">
+          <Link to="/dashboard/workforces">
             <Button>Add workforce</Button>
           </Link>
 
-          <Link to="/dashboard/schedule">
+          <Link to="/dashboard/schedules">
             <Button>Create schedule</Button>
           </Link>
         </Section>

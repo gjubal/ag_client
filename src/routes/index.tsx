@@ -22,24 +22,29 @@ const Routes: React.FC = () => {
 
       <Route path="/profile" isPrivate component={Profile} />
       <Route path="/dashboard" isPrivate exact component={Dashboard} />
-      <Route path="/dashboard/business" isPrivate exact component={Business} />
       <Route
-        path="/dashboard/business/add"
+        path="/dashboard/businesses"
+        isPrivate
+        exact
+        component={Business}
+      />
+      <Route
+        path="/dashboard/businesses/add"
         isPrivate
         component={BusinessForm}
       />
       <Route
-        path="/dashboard/workforce"
+        path="/dashboard/workforces"
         isPrivate
         exact
         component={Workforce}
       />
       <Route
-        path="/dashboard/workforce/add"
+        path="/dashboard/workforces/add"
         isPrivate
         component={WorkforceForm}
       />
-      <Route path="/dashboard/schedule" isPrivate exact component={Schedule} />
+      <Route path="/dashboard/schedules" isPrivate exact component={Schedule} />
     </Switch>
   );
 };

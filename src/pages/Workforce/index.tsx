@@ -18,7 +18,7 @@ const Workforce: React.FC = () => {
         type="main"
         title="Workforces"
         buttonText="+ Add workforce"
-        redirectTo="/dashboard/workforce/add"
+        redirectTo="/dashboard/workforces/add"
       />
 
       <Content>
@@ -28,16 +28,16 @@ const Workforce: React.FC = () => {
               <legend> Workforce 1</legend>
               <p>Contains 4 employees</p>
               <div>
-                <CardIcon type="edit" />
-                <CardIcon type="remove" />
+                <CardIcon label="edit" />
+                <CardIcon label="remove" />
               </div>
             </WorkforceTile>
             <WorkforceTile>
               <legend> Workforce 2</legend>
               <p>Contains 12 employees</p>
               <div>
-                <CardIcon type="edit" />
-                <CardIcon type="remove" />
+                <CardIcon label="edit" />
+                <CardIcon label="remove" />
               </div>
             </WorkforceTile>
           </Section>

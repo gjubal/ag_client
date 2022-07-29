@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({
       {type === 'form' && (
         <Nav>
           <NavContent type={type}>
-            <Link to="/dashboard/business">
+            <Link to="/dashboard/businesses">
               <Box>
                 <FiArrowLeft />
               </Box>
